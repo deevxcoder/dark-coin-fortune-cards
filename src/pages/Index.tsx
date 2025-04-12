@@ -11,37 +11,35 @@ import HowItWorks from '@/components/HowItWorks';
 const Index = () => {
   return (
     <Layout>
-      <div className="container mx-auto py-8 space-y-8">
+      <div className="container mx-auto space-y-8 px-4">
         <PromoSlider />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Coin Toss Card */}
-          <Link to="/coin-toss" className="group">
-            <div className="game-card h-[300px] relative overflow-hidden">
+          <Link to="/coin-toss" className="group relative overflow-hidden rounded-xl bg-[#1A1F2C] hover:bg-[#1F2937] transition-all duration-300">
+            <div className="h-[300px] relative">
               <img 
                 src="https://picsum.photos/id/91/800/600" 
                 alt="Coin Toss"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-all duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F1923] via-[#0F1923]/50 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6">
-                <h2 className="text-3xl font-bold mb-2">Coin Toss</h2>
+                <h2 className="text-3xl font-bold mb-2 text-[#00E701]">Coin Toss</h2>
                 <p className="text-gray-300">Quick 50/50 chance to double your money</p>
               </div>
             </div>
           </Link>
 
-          {/* Satta Matka Card */}
-          <Link to="/satta-matka" className="group">
-            <div className="game-card h-[300px] relative overflow-hidden">
+          <Link to="/satta-matka" className="group relative overflow-hidden rounded-xl bg-[#1A1F2C] hover:bg-[#1F2937] transition-all duration-300">
+            <div className="h-[300px] relative">
               <img 
                 src="https://picsum.photos/id/96/800/600" 
                 alt="Satta Matka"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-all duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F1923] via-[#0F1923]/50 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6">
-                <h2 className="text-3xl font-bold mb-2">Satta Matka</h2>
+                <h2 className="text-3xl font-bold mb-2 text-[#00A1FF]">Satta Matka</h2>
                 <p className="text-gray-300">Multiple markets with high payouts</p>
               </div>
             </div>
