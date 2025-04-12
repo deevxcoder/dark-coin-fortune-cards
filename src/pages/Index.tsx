@@ -3,12 +3,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Coins, ListFilter } from 'lucide-react';
 import Layout from '@/components/Layout';
+import PromoSlider from '@/components/PromoSlider';
+import RecentWinners from '@/components/RecentWinners';
+import Leaderboard from '@/components/Leaderboard';
+import RecentResults from '@/components/RecentResults';
+import HowItWorks from '@/components/HowItWorks';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
   return (
     <Layout>
-      <section className="py-6 md:py-12">
+      <PromoSlider />
+      
+      <section className="py-6">
         <div className="flex flex-col items-center text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 gradient-text">
             Play & Win Big
@@ -61,6 +68,13 @@ const Index = () => {
             </Button>
           </div>
         </div>
+        
+        <RecentWinners />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Leaderboard />
+          <RecentResults />
+        </div>
+        <HowItWorks />
       </section>
     </Layout>
   );

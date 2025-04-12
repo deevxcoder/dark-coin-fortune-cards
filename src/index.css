@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -81,5 +82,16 @@
   
   .active-number {
     @apply border-accent-magenta bg-accent-magenta/10 shadow-sm shadow-accent-magenta/50;
+  }
+
+  /* Mobile padding adjustment */
+  @media (max-width: 768px) {
+    .market-card {
+      @apply p-3;
+    }
+    
+    .game-card {
+      @apply p-3;
+    }
   }
 }
