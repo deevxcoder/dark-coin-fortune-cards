@@ -5,33 +5,33 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
     
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
     
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
     
-    --primary: 267 70% 75%;
-    --primary-foreground: 240 5.9% 10%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
     
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
     
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20.2% 65.1%;
     
-    --accent: 305 76.3% 62%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 210 40% 98%;
     
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
     
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 224 71.4% 4.1%;
     
     --radius: 0.75rem;
   }
@@ -49,7 +49,7 @@
 
 @layer components {
   .animated-border {
-    @apply border border-accent-purple/50;
+    @apply relative bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-0 before:absolute before:inset-0 before:p-[1px] before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:rounded-xl before:-z-10 overflow-hidden;
   }
   
   .card-hover {
@@ -61,11 +61,11 @@
   }
   
   .game-card {
-    @apply bg-card-gradient rounded-xl p-4 border border-accent-purple/30 card-hover;
+    @apply bg-gradient-to-br from-secondary/50 to-secondary rounded-xl p-4 animated-border card-hover backdrop-blur-sm;
   }
   
   .market-card {
-    @apply bg-card-gradient rounded-xl p-4 border border-accent-purple/30 card-hover relative;
+    @apply bg-gradient-to-br from-secondary/50 to-secondary rounded-xl p-4 animated-border card-hover relative backdrop-blur-sm;
   }
   
   .bet-button {

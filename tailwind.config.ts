@@ -86,8 +86,8 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'card-gradient': 'linear-gradient(225deg, #221F26 0%, #403E43 100%)',
-        'button-gradient': 'linear-gradient(90deg, #9b87f5 0%, #D946EF 100%)',
+        'card-gradient': 'linear-gradient(225deg, rgb(17, 24, 39) 0%, rgb(31, 41, 55) 100%)',
+        'button-gradient': 'linear-gradient(90deg, rgb(59, 130, 246) 0%, rgb(147, 51, 234) 100%)',
         'shimmer-gradient': 'linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent)'
       }
     }
