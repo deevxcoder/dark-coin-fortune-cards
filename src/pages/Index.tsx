@@ -2,11 +2,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
+import PromoSlider from '@/components/PromoSlider';
+import RecentWinners from '@/components/RecentWinners';
+import Leaderboard from '@/components/Leaderboard';
+import RecentResults from '@/components/RecentResults';
+import HowItWorks from '@/components/HowItWorks';
 
 const Index = () => {
   return (
     <Layout>
-      <div className="container mx-auto py-8">
+      <div className="container mx-auto py-8 space-y-8">
+        <PromoSlider />
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Coin Toss Card */}
           <Link to="/coin-toss" className="group">
@@ -40,6 +47,14 @@ const Index = () => {
             </div>
           </Link>
         </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <RecentWinners />
+          <Leaderboard />
+        </div>
+
+        <RecentResults />
+        <HowItWorks />
       </div>
     </Layout>
   );
