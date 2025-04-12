@@ -10,10 +10,14 @@ const Header: React.FC = () => {
   const isMobile = useIsMobile();
   
   return (
-    <header className="bg-dark-charcoal border-b border-accent-purple/20 p-4">
+    <header className="bg-dark-charcoal border-b border-accent-purple/20 p-4 sticky top-0 z-40">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          {isMobile && <Menu className="text-accent-purple h-6 w-6" />}
+          {isMobile && (
+            <Button variant="ghost" size="icon" className="text-accent-purple">
+              <Menu className="h-6 w-6" />
+            </Button>
+          )}
           <Link to="/" className="flex items-center">
             <span className="text-2xl font-bold gradient-text">StakeDark</span>
           </Link>
@@ -37,7 +41,7 @@ const Header: React.FC = () => {
             <span className="absolute top-0 right-0 w-2 h-2 bg-accent-magenta rounded-full"></span>
           </Button>
           
-          <Button className="bg-button-gradient flex items-center gap-2">
+          <Button className="bg-button-gradient flex items-center gap-2 text-white">
             <Wallet size={16} />
             <span>₹1000.00</span>
           </Button>

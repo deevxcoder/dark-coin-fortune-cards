@@ -49,7 +49,7 @@
 
 @layer components {
   .animated-border {
-    @apply border border-accent-purple relative overflow-hidden;
+    @apply border border-accent-purple/50;
   }
   
   .card-hover {
@@ -60,16 +60,12 @@
     @apply bg-gradient-to-r from-accent-purple to-accent-magenta bg-clip-text text-transparent;
   }
   
-  .shimmer {
-    @apply before:absolute before:inset-0 before:w-full before:h-full before:bg-shimmer-gradient before:animate-shimmer;
-  }
-  
   .game-card {
-    @apply bg-card-gradient rounded-xl p-4 animated-border card-hover;
+    @apply bg-card-gradient rounded-xl p-4 border border-accent-purple/30 card-hover;
   }
   
   .market-card {
-    @apply bg-card-gradient rounded-xl p-4 animated-border card-hover relative;
+    @apply bg-card-gradient rounded-xl p-4 border border-accent-purple/30 card-hover relative;
   }
   
   .bet-button {
@@ -84,7 +80,7 @@
     @apply border-accent-magenta bg-accent-magenta/10 shadow-sm shadow-accent-magenta/50;
   }
 
-  /* Mobile padding adjustment */
+  /* Mobile optimization */
   @media (max-width: 768px) {
     .market-card {
       @apply p-3;
@@ -93,5 +89,35 @@
     .game-card {
       @apply p-3;
     }
+  }
+  
+  /* Improved text contrast */
+  .text-contrast-high {
+    @apply text-white;
+  }
+  
+  .text-contrast-medium {
+    @apply text-gray-200;
+  }
+  
+  .text-contrast-low {
+    @apply text-gray-400;
+  }
+  
+  /* Improved component styling */
+  .card-header {
+    @apply flex items-center mb-4;
+  }
+  
+  .card-icon {
+    @apply text-accent-purple h-6 w-6 mr-3;
+  }
+  
+  .card-title {
+    @apply text-xl font-bold text-white;
+  }
+  
+  .section-container {
+    @apply mb-12;
   }
 }

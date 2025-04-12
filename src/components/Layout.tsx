@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const isMobile = useIsMobile();
   
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-dark-purple">
       <Header />
       <main className="flex-grow container mx-auto py-6 px-4 pb-20 md:pb-6">
         {children}
