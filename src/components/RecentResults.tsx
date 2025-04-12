@@ -12,7 +12,7 @@ const results = [
 
 const RecentResults: React.FC = () => {
   return (
-    <div className="bg-[#1A1F2C] rounded-xl p-4 mb-12 animated-border card-hover">
+    <div className="bg-[#1A1F2C] rounded-xl p-4 mb-12">
       <div className="flex items-center mb-4">
         <ListOrdered className="text-[#00E701] h-6 w-6 mr-3" />
         <h2 className="text-xl font-bold text-white">Recent Results</h2>
@@ -20,7 +20,7 @@ const RecentResults: React.FC = () => {
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-accent-purple/10">
+            <tr className="border-b border-[#2C3544]">
               <th className="text-left py-2 px-2">Market</th>
               <th className="text-center py-2 px-2">Date</th>
               <th className="text-center py-2 px-2">Open</th>

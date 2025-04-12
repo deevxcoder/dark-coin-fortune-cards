@@ -27,14 +27,14 @@ const steps = [
 
 const HowItWorks: React.FC = () => {
   return (
-    <div className="bg-[#1A1F2C] rounded-xl p-4 mb-12 animated-border card-hover">
+    <div className="bg-[#1A1F2C] rounded-xl p-4 mb-12">
       <div className="flex items-center mb-4">
-        <Info className="text-[#00A1FF] h-6 w-6 mr-3" />
+        <Info className="text-[#00E701] h-6 w-6 mr-3" />
         <h2 className="text-xl font-bold text-white">How It Works</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {steps.map((step) => (
-          <div key={step.id} className="bg-dark-charcoal p-4 rounded-lg border border-accent-purple/20">
+          <div key={step.id} className="bg-[#242B3D] hover:bg-[#2C3544] transition-all duration-300 p-4 rounded-lg border border-[#2C3544]">
             <div className="flex items-center mb-2">
               <div className="w-8 h-8 rounded-full bg-accent-purple/20 flex items-center justify-center mr-3 text-accent-purple font-bold">
                 {step.id}

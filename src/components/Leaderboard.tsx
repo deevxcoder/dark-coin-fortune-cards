@@ -11,14 +11,14 @@ const leaderboardData = [
 
 const Leaderboard: React.FC = () => {
   return (
-    <div className="bg-[#1A1F2C] rounded-xl p-4 mb-12 animated-border card-hover">
+    <div className="bg-[#1A1F2C] rounded-xl p-4 mb-12">
       <div className="flex items-center mb-4">
-        <Medal className="text-[#00A1FF] h-6 w-6 mr-3" />
+        <Medal className="text-[#00E701] h-6 w-6 mr-3" />
         <h2 className="text-xl font-bold text-white">Top Players</h2>
       </div>
       <div className="flex flex-col space-y-4">
         {leaderboardData.map((player) => (
-          <div key={player.id} className="flex items-center justify-between p-3 bg-dark-charcoal rounded-lg">
+          <div key={player.id} className="flex items-center justify-between p-3 bg-[#242B3D] hover:bg-[#2C3544] transition-all duration-300 rounded-lg border border-[#2C3544]">
             <div className="flex items-center">
               <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 
                 ${player.position === 1 ? 'bg-yellow-500/20 text-yellow-500' : 
