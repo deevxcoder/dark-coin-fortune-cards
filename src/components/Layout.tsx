@@ -2,24 +2,19 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import MobileMenu from './MobileMenu';
-import { useIsMobile } from '@/hooks/use-mobile';
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const isMobile = useIsMobile();
-  
   return (
-    <div className="flex flex-col min-h-screen bg-dark-purple">
+    <div className="min-h-screen bg-[#0F1923] flex flex-col">
       <Header />
-      <main className="flex-grow container mx-auto py-6 px-4 pb-20 md:pb-6">
+      <main className="flex-grow">
         {children}
       </main>
-      {!isMobile && <Footer />}
-      <MobileMenu />
+      <Footer />
     </div>
   );
 };
