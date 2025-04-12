@@ -27,10 +27,10 @@ const steps = [
 
 const HowItWorks: React.FC = () => {
   return (
-    <div className="market-card section-container">
-      <div className="card-header">
-        <Info className="card-icon" />
-        <h2 className="card-title">How It Works</h2>
+    <div className="bg-[#1A1F2C] rounded-xl p-4 mb-12 animated-border card-hover">
+      <div className="flex items-center mb-4">
+        <Info className="text-[#00A1FF] h-6 w-6 mr-3" />
+        <h2 className="text-xl font-bold text-white">How It Works</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {steps.map((step) => (

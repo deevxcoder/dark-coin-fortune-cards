@@ -11,10 +11,10 @@ const leaderboardData = [
 
 const Leaderboard: React.FC = () => {
   return (
-    <div className="market-card mb-12">
+    <div className="bg-[#1A1F2C] rounded-xl p-4 mb-12 animated-border card-hover">
       <div className="flex items-center mb-4">
-        <Medal className="text-accent-purple h-6 w-6 mr-3" />
-        <h2 className="text-xl font-bold">Top Players</h2>
+        <Medal className="text-[#00A1FF] h-6 w-6 mr-3" />
+        <h2 className="text-xl font-bold text-white">Top Players</h2>
       </div>
       <div className="flex flex-col space-y-4">
         {leaderboardData.map((player) => (

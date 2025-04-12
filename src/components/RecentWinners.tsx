@@ -20,10 +20,10 @@ const winners = [
 
 const RecentWinners: React.FC = () => {
   return (
-    <div className="market-card mb-12">
+    <div className="bg-[#1A1F2C] rounded-xl p-4 mb-12 animated-border card-hover">
       <div className="flex items-center mb-4">
-        <Trophy className="text-accent-purple h-6 w-6 mr-3" />
-        <h2 className="text-xl font-bold">Recent Winners</h2>
+        <Trophy className="text-[#00E701] h-6 w-6 mr-3" />
+        <h2 className="text-xl font-bold text-white">Recent Winners</h2>
       </div>
       <Table>
         <TableHeader>

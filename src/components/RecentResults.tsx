@@ -12,10 +12,10 @@ const results = [
 
 const RecentResults: React.FC = () => {
   return (
-    <div className="market-card mb-12">
+    <div className="bg-[#1A1F2C] rounded-xl p-4 mb-12 animated-border card-hover">
       <div className="flex items-center mb-4">
-        <ListOrdered className="text-accent-purple h-6 w-6 mr-3" />
-        <h2 className="text-xl font-bold">Recent Results</h2>
+        <ListOrdered className="text-[#00E701] h-6 w-6 mr-3" />
+        <h2 className="text-xl font-bold text-white">Recent Results</h2>
       </div>
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
