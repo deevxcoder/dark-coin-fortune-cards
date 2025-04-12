@@ -11,7 +11,7 @@ import HowItWorks from '@/components/HowItWorks';
 const Index = () => {
   return (
     <Layout>
-      <div className="container mx-auto space-y-8 px-4">
+      <div className="max-w-7xl mx-auto space-y-8 px-4">
         <PromoSlider />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
