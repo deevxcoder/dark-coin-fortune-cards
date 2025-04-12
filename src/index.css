@@ -4,6 +4,12 @@
 
 @layer base {
   :root {
+    --sidebar: 215 23% 16%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-border: 217 19% 27%;
+    --sidebar-accent: 217 19% 27%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-ring: 217 19% 27%;
     --background: 220 17% 7%;
     --foreground: 210 40% 98%;
 
