@@ -10,8 +10,8 @@ const Header: React.FC = () => {
   const isMobile = useIsMobile();
   
   return (
-    <header className="bg-[#0F1923] border-b border-[#1F2937]/20 p-4 sticky top-0 z-40 backdrop-blur-lg backdrop-saturate-150">
-      <div className="container mx-auto flex items-center justify-between">
+    <header className="bg-[#1A1F2C] border-b border-[#2C3544] p-4 sticky top-0 z-40">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           {isMobile && (
             <Button variant="ghost" size="icon" className="text-[#00E701]">

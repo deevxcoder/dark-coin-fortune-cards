@@ -33,7 +33,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-[#0F1923] text-white antialiased;
+    @apply bg-[#151A25] text-white antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }

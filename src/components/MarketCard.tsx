@@ -24,14 +24,14 @@ const MarketCard: React.FC<MarketCardProps> = ({
 }) => {
   return (
     <Link to={`/satta-matka/${id}`} className="block">
-      <div className="market-card h-full">
+      <div className="bg-[#1A1F2C] rounded-xl p-4 hover:bg-[#242B3D] transition-all duration-300 border border-[#2C3544]">
         <div className="relative h-40 mb-4 rounded-lg overflow-hidden">
           <img 
             src={image} 
             alt={name}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-lg"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-dark-purple/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1A1F2C] via-transparent to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-full p-3">
             <h3 className="text-xl font-bold text-white">{name}</h3>
           </div>
